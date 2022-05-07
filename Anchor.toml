@@ -1,0 +1,15 @@
+[features]
+seeds = true
+
+[programs.devnet]
+auto_pda = "3Dqx282m1twoCYo97aFoJMk3CJusjC4MwzVf3qB7cEe2"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "devnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
